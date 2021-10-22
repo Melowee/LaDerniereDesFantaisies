@@ -7,10 +7,12 @@ public class Heal {
 		this.value = 100;
 	}
 	
-	public void apply(HealthPoints healthPoints) {		
-		while (this.value > 0) {
-			healthPoints.increase();
-			this.value--;
+	public void apply(HealthPoints healthPoints) {	
+		if (this.value == 0) {
+			return;
 		}
+		healthPoints.increase();
+		this.value--;
+		this.apply(healthPoints);
 	}
 }

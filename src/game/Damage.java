@@ -7,10 +7,13 @@ public class Damage {
 		this.value = 100;
 	}
 	
-	public void apply(HealthPoints healthPoints) {		
-		while (this.value > 0) {
-			healthPoints.decrease();
-			this.value--;
+	public void apply(HealthPoints healthPoints) {				
+		if (this.value == 0) {
+			return;
 		}
+		
+		healthPoints.decrease();
+		this.value--;
+		this.apply(healthPoints);
 	}
 }

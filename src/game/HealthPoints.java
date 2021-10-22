@@ -27,4 +27,8 @@ public class HealthPoints {
 			isAlive.kill();
 		}
 	}
+	
+	public void display() {
+		System.out.print(this.value + " Points de Vie ");;
+	}
 }

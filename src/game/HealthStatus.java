@@ -17,4 +17,9 @@ public class HealthStatus {
 	public void apply(Heal heal) {
 		this.isAlive.applyHealIfPossible(heal, this.healthPoints);
 	}
+	
+	public void display() {
+		this.isAlive.display();
+		this.healthPoints.display();
+	}
 }

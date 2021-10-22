@@ -6,4 +6,8 @@ public class Level {
 	public Level() {
 		this.value = 1;
 	}
+	
+	public void display() {
+		System.out.print("Niveau " + this.value + " ");
+	}
 }

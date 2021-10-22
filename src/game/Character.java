@@ -23,5 +23,11 @@ public class Character {
 	
 	public void heal(Character target, Heal heal) {
 		target.recieveHeal(heal);
-	}	
+	}
+	
+	public void display() {
+		System.out.print("Personnage : ");
+		this.level.display();
+		this.healthStatus.display();
+	}
 }

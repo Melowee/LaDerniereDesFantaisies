@@ -19,6 +19,10 @@ public class Main {
 		c1.attack(c2, new Damage());
 		c1.heal(c2, new Heal());
 		
+		c1.display();
+		System.out.println();
+		c2.display();
+		
 		return;
 	}
 }

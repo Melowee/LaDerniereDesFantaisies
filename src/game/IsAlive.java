@@ -16,4 +16,10 @@ public class IsAlive {
 	public void kill() {
 		this.value = false;
 	}
+	
+	public void display() {
+		if (!this.value) {
+			System.out.print("(Décédé) ");
+		}
+	}
 }
